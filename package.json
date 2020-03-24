@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "core-js": "^3.6.4",
     "vue": "^2.6.11"
   },
@@ -35,7 +36,6 @@
     "rules": {}
   },
   "browserslist": [
-    "> 1%",
-    "last 2 versions"
+    "iOS 9"
   ]
 }
