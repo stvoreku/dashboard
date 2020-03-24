@@ -1,8 +1,8 @@
 console.log('Local JS loaded')
 
-var Vue = require('vue');
+import Vue from 'vue';
 var axios = require('axios')
-
+//var leafleat = require('leafleat')
 new Vue({
     el: '#app',
     data: {
@@ -38,17 +38,17 @@ new Vue({
               .get('https://danepubliczne.imgw.pl/api/data/synop/station/warszawa')
               .then(response => this.message = response.data.temperatura)
         },
-        initMap() {
-            var L;
-            this.map = L.map('map', { zoomControl: false }).setView([52.1584, 21.0722], 15);this.tileLayer = L.tileLayer(
-                'https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}.png',
-                {
-                  maxZoom: 18,
-                  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>',
-                }
-              );this.tileLayer.addTo(this.map)
-        },
-        initLayers() {},
+        // initMap() {
+            // var L;
+            // this.map = L.map('map', { zoomControl: false }).setView([52.1584, 21.0722], 15);this.tileLayer = L.tileLayer(
+                // 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}.png',
+                // {
+                  // maxZoom: 18,
+                  // attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>',
+                // }
+              // );this.tileLayer.addTo(this.map)
+        // },
+        // initLayers() {},
 
     },
     computed: {
@@ -63,7 +63,7 @@ new Vue({
         this.getWet()
     },
     mounted() {
-        this.initMap()
-        this.initLayers()
+        // this.initMap()
+        // this.initLayers()
     },
   })

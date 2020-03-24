@@ -4,10 +4,10 @@
 <!-- development version, includes helpful console warnings >
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script-->
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css">
+
 <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
 <body>
 
@@ -18,7 +18,7 @@
 <div class="grid-container">
   <div class="grid-item" v-bind:style="bg1"><div class="widget-content">Warsaw Temp:<br> {{message}}  C</div></div>
   <div class="grid-item">2</div>
-  <div class="grid-item"><div id="map" class="map"></div></div>
+  <div class="grid-item">3<div id="map" class="map"></div></div>
   <div class="grid-item">4</div>
   <div class="grid-item">5</div>
   <div class="grid-item">6</div>
